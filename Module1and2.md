@@ -190,6 +190,11 @@ Check:
 * DHCP list
 * WAN IP
 
+Images:
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9670bfd5-4e28-4cb5-bbf2-1625c08dccf8" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/43c28930-5006-43b3-9eed-d0ce3041ba92" />
+
+
 ---
 
 # 10) DHCP Working (DORA Process)
@@ -221,19 +226,6 @@ Telnet (Not Secure):
 ```bash
 telnet remote_ip
 ```
-
----
-
-# Conclusion
-
-This lab helped in understanding:
-
-* File transfer using SCP
-* FTP server configuration
-* Network debugging
-* Remote connectivity
-* DHCP operation
-* Packet analysis tools
 
 ---
 
