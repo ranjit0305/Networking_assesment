@@ -120,14 +120,68 @@ Parameters:
 
 # 5️) Duplicate IP Address Issue
 
-Problems caused:
+## What is a Duplicate IP?
 
-* IP conflict error
-* ARP confusion
-* Network instability
+A duplicate IP address occurs when **two or more devices in the same network are assigned the same IP address**, causing conflicts in communication.
+
+## How Duplicate IPs Are Configured
+
+### 1️) Manual (Static IP) Configuration
+
+- Most common cause of duplicate IP
+- Occurs when users manually assign the same IP to multiple devices
+
+**Example:**
+- PC1 → 192.168.1.100  
+- PC2 → 192.168.1.100 ❌  
 
 ---
-<img width="940" height="202" alt="image" src="https://github.com/user-attachments/assets/1529df49-79ba-48b3-bce6-857d467a5d93" />
+
+### 2️) DHCP Conflict
+
+- DHCP server assigns IP addresses automatically
+- Duplicate IP may occur due to:
+  - Server misconfiguration
+  - Lease issues
+  - Device reusing an old IP
+
+---
+
+### 3️) Mixing Static and DHCP IPs
+
+- Occurs when:
+  - DHCP assigns IPs in a range
+  - A user manually assigns an IP within the same range
+
+**Example:**
+- DHCP range: 192.168.1.2 – 192.168.1.100  
+- Manual IP assigned: 192.168.1.50 ❌  
+
+---
+
+### 4️) Virtual Machine / Cloning Issues
+
+- Happens when:
+  - System configurations are copied
+  - Same IP is duplicated across systems
+
+---
+
+## Result of Duplicate IP
+
+- Network confusion
+- ARP conflicts
+- Packet loss
+- Unstable communication
+
+---
+
+## Prevention
+
+- Use DHCP properly  
+- Avoid assigning IPs within DHCP range  
+- Maintain proper IP address management  
+
 
 # 6️) Remote Access Tools
 
