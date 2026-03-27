@@ -272,12 +272,25 @@ Assigns:
 SSH (Secure):
 
 ```bash
+SERVER SIDE:
+sudo apt update
+sudo apt install openssh-server
+sudo systemctl start ssh
+sudo systemctl enable ssh
+sudo systemctl status ssh
+
+CLIENT SIDE:
 ssh user@remote_ip
 ```
 
 Telnet (Not Secure):
 
 ```bash
+SERVER SIDE:
+sudo apt install xinetd telnetd
+sudo systemctl start xinetd
+
+CLIENT SIDE:
 telnet remote_ip
 ```
 
