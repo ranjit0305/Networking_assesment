@@ -262,7 +262,8 @@ To divide a network into smaller subnets.
 
 ### Screenshots
 
-<img width="744" height="186" alt="image" src="https://github.com/user-attachments/assets/964d1bbb-027b-444a-bb69-34fa401122c9" />
+<img width="419" height="186" alt="image" src="https://github.com/user-attachments/assets/f71c80bf-cf20-42d6-937b-5674f9bf81ff" />
+
 <img width="940" height="896" alt="image" src="https://github.com/user-attachments/assets/ddea5091-9d77-41ae-b38a-9c3efc7a12c1" />
 <img width="940" height="940" alt="image" src="https://github.com/user-attachments/assets/33e9fb6f-0891-453f-98c8-8c13c650f9dd" />
 <img width="940" height="476" alt="image" src="https://github.com/user-attachments/assets/31187d4f-030b-4ab9-b5cd-7756196ce7d8" />
