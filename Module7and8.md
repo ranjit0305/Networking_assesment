@@ -442,7 +442,9 @@ iperf -bidir
 
 
 📸 Screenshots  
-(Add here)
+![](https://github.com/user-attachments/assets/bbb4548d-1f33-4085-a790-899bef84644d)
+![](https://github.com/user-attachments/assets/cc811dbd-ce84-4418-a098-6943517cb490)
+![](https://github.com/user-attachments/assets/875db12b-6a6e-4a59-bc98-89f792899cae)
 
 ✅ Result  
 Network performance measured.
