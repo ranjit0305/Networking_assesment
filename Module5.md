@@ -359,7 +359,8 @@ ip route 200.0.0.0 255.255.255.0 200.0.0.2
 
 ### Screenshots
 
-<img width="753" height="333" alt="image" src="https://github.com/user-attachments/assets/4ed2f1d3-ed84-429a-a0f2-c68997427aa4" />
+<img width="406" height="221" alt="image" src="https://github.com/user-attachments/assets/570576cc-9f55-47fb-a818-1ca34ddbf2f2" />
+
 
 <img width="844" height="281" alt="image" src="https://github.com/user-attachments/assets/265c6f06-d88a-4aba-9a80-53e2024ee719" />
 
