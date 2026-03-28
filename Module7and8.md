@@ -1,5 +1,4 @@
-# Networks assignment (Q1–Q14)
-
+# Networks assignment 
 ---
 
 ## 🧪 1. Connectivity Test and DNS Lookup
@@ -142,8 +141,20 @@ To configure VLANs and test communication.
 
 💻 Commands  
 ```
+Both switches:
+
 vlan 10
 vlan 20
+
+interface fa0/1
+switchport mode access
+switchport access vlan 10
+
+interface fa0/2
+switchport mode access
+switchport access vlan 20
+
+interface fa0/24
 switchport mode trunk
 ```
 
@@ -157,7 +168,7 @@ VLAN communication verified.
 
 🧾 Conclusion  
 Trunk ports allow VLAN communication.
-
+Data will be tagged along with the VLAN name.
 ---
 
 ## 🧪 6. Native VLAN Configuration
@@ -166,7 +177,16 @@ Trunk ports allow VLAN communication.
 To configure native VLAN and troubleshoot mismatches.
 
 ⚙️ Steps Performed  
-- Changed native VLAN  
+- Changed native VLAN
+```
+enable
+configure terminal
+
+interface fa0/24
+switchport mode trunk
+switchport trunk native vlan 99
+```
+- Now VLAN 99 will be untagged and other vlans will be tagged
 - Tested connectivity  
 - Checked mismatch issues  
 
@@ -212,12 +232,27 @@ To configure voice VLAN for VoIP.
 - Configured switch port  
 
 💻 Command  
+```
+enable
+configure terminal
 
+vlan 10
+name DATA
+
+vlan 20
+name VOICE
+
+interface fa0/1
+switchport mode access
+switchport access vlan 10
 switchport voice vlan 20
 
 
+```
+
 📸 Screenshots  
-<img width="410" height="131" alt="image" src="https://github.com/user-attachments/assets/e50c4466-93bc-4fc7-bb7d-80b2a2d79c1a" />
+<img width="385" height="151" alt="image" src="https://github.com/user-attachments/assets/0ede3434-dd39-4420-934f-8b75994b7869" />
+<img width="607" height="241" alt="image" src="https://github.com/user-attachments/assets/bc28e2ff-d691-46ce-bcdf-c8da48142648" />
 
 
 ✅ Result  
@@ -271,6 +306,13 @@ encapsulation dot1Q 20
 
 📸 Screenshots  
 <img width="469" height="341" alt="image" src="https://github.com/user-attachments/assets/4424b29d-ce93-43da-8cf3-e3bd8f3e9205" />
+Switch:
+<img width="349" height="251" alt="image" src="https://github.com/user-attachments/assets/2072eae3-09cf-43b2-8cae-93bfb367e28f" />
+Router:
+<img width="611" height="425" alt="image" src="https://github.com/user-attachments/assets/61e221b8-6288-4a34-9200-23b3f7586398" />
+<img width="459" height="184" alt="image" src="https://github.com/user-attachments/assets/f4b3cc67-053d-4d44-a9c3-eeca75466dd1" />
+
+
 
 
 ✅ Result  
