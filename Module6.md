@@ -1,4 +1,4 @@
-#  Layer 3 Networking Assignment (Module 05)
+#  Layer 3 Networking Assignment (Module 06)
 
 ---
 
