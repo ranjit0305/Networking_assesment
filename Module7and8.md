@@ -405,6 +405,16 @@ To configure NAT techniques.
 
 💻 Commands  
 ```
+
+Static NAT:
+ip nat inside source static 192.168.1.2 200.1.1.10
+
+Dynamic NAT:
+ip nat pool MYPOOL 200.1.1.20 200.1.1.30 netmask 255.255.255.0
+access-list 1 permit 192.168.1.0 0.0.0.255
+ip nat inside source list 1 pool MYPOOL
+
+PAT:
 ip nat inside source list 1 interface g0/1 overload
 ```
 
